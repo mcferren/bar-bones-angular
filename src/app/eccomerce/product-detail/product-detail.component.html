@@ -1,0 +1,32 @@
+<div><a [routerLink]="['/']">Home</a></div>
+
+<h1>{{(productDetail$ | async)?.name}}</h1>
+
+<form *ngIf="productForm" 
+    [formGroup]="productForm" 
+    (ngSubmit)="productForm.valid && onSubmit()">
+
+    <div>
+
+        <!-- <div> -->
+            <label for="quantity">Quantity</label>
+            <input type="text" id="quantity" formControlName="quantity" />
+        <!-- </div> -->
+
+        <!-- <div> -->
+            <label for="zipcode">Zip Code</label>
+            <input type="text" id="zipcode" formControlName="zipcode" />
+        <!-- </div> -->
+
+        <ng-container *ngFor="let field of fieldList">
+
+            <label [for]="field.fieldName">{{field.label}}</label>
+            <input type="text" [id]="field.fieldName" [formControlName]="field.fieldName" />
+        </ng-container>
+
+    </div>
+
+    <hr>
+
+    <input type="submit" value="Add to Cart">
+</form>

@@ -1,0 +1,1 @@
+export const productUrl = './../../assets/data/product-list.json';

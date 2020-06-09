@@ -1,0 +1,22 @@
+form {
+    width: 300px;
+}
+
+div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-row-gap: 1em;
+    margin-bottom: 1.2rem;
+}
+
+label {
+    grid-column-start: 1; 
+    grid-column-end: 1; 
+    overflow: hidden;
+}
+
+input {
+    grid-column-start: 2; 
+    grid-column-end: 2;
+    margin-left: 8px;
+}

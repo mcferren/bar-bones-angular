@@ -1,0 +1,39 @@
+[{
+	"id": 1,
+	"productType": 1,
+	"name": "Novelty T",
+	"customFields": []
+}, {
+	"id": 2,
+	"productType": 2,
+	"name": "Coffee Mug",
+	"customFields": [{
+		"label": "Inscription",
+		"fieldName": "inscription"
+	}]
+}, {
+	"id": 3,
+	"productType": 2,
+	"name": "Dog Tag",
+	"customFields": [{
+		"label": "Front Engraving",
+		"fieldName": "front"
+	}, {
+		"label": "Back Engraving",
+		"fieldName": "back"
+	}]
+}, {
+	"id": 4,
+	"productType": 2,
+	"name": "Candy Corn",
+	"customFields": [{
+		"label": "Top",
+		"fieldName": "topColor"
+	}, {
+		"label": "Middle",
+		"fieldName": "middleColor"
+	}, {
+		"label": "Bottom",
+		"fieldName": "bottomColor"
+	}]
+}]
